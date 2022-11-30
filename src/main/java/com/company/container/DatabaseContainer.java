@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseContainer {
-    static String url="jdbc:postgresql://localhost:5432/rent_car";
-    static String dbUser="postgres";
-    static String dbPassword="manguberdi66";
+    static String url="";
+    static String dbUser="";
+    static String dbPassword="";
 
     public static  Connection getConnection(){
 
