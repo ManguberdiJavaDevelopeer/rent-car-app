@@ -50,7 +50,9 @@ public class FileUploadServlet extends HttpServlet {
                                 String imageName = p.getSubmittedFileName();
                                 String uuid = String.valueOf(UUID.randomUUID());
                                 String imageDbName = imageName.substring(0,imageName.lastIndexOf(".")) + uuid + imageName.substring(imageName.lastIndexOf("."));
-                                String uploadPath = "D:/Javalessons/Java Advanced Lesson/rent_car-app/web/carPhotos/" + imageDbName;
+                                //you should write directory name which is car Photos path
+                                String directoryName="D:/Javalessons/Java Advanced Lesson/rent_car-app/web/carPhotos/";
+                                String uploadPath = directoryName + imageDbName;
                                 Result result = DatabaseController.addCarImage(carId, uploadPath);
                                 if (Objects.requireNonNull(result).isSuccess()) {
                                     FileOutputStream stream = new FileOutputStream(uploadPath);
