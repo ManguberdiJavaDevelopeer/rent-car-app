@@ -21,6 +21,7 @@ public class Register extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         req.getRequestDispatcher("/authFrontend/register.jsp").forward(req, resp);
     }
 

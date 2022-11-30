@@ -1,13 +1,7 @@
 
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.company.controller.DatabaseController" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: User
-  Date: 11/28/2022
-  Time: 4:49 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>

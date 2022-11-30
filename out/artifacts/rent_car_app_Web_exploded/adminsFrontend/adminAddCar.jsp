@@ -1,12 +1,6 @@
 <%@ page import="com.company.controller.DatabaseController" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: User
-  Date: 11/20/2022
-  Time: 2:12 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -33,6 +27,9 @@
             </li>
             <li class="nav-item ">
                 <a href="${pageContext.request.contextPath}/WWADMIN" class="nav-link" >Work with admin</a>
+            </li>
+            <li class="nav-item ">
+                <a href="${pageContext.request.contextPath}/FileUploadServlet" class="nav-link" >Add Photo to car</a>
             </li>
             <li class="nav-item  ">
                 <a href="${pageContext.request.contextPath}/logout" class="nav-link ">Logout</a></li>

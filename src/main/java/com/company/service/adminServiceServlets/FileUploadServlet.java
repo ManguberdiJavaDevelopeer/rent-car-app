@@ -77,7 +77,7 @@ public class FileUploadServlet extends HttpServlet {
                 }
             }
         }else {
-            request.getRequestDispatcher("adminMainPage.jsp").forward(request, response);
+            request.getRequestDispatcher("/adminsFrontend/adminMainPage.jsp").forward(request, response);
         }
 
     }
