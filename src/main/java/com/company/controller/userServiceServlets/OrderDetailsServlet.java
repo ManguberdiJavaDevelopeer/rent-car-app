@@ -1,4 +1,4 @@
-package com.company.service.userServiceServlets;
+package com.company.controller.userServiceServlets;
 
 import com.company.controller.DatabaseController;
 import com.company.entity.Orders;

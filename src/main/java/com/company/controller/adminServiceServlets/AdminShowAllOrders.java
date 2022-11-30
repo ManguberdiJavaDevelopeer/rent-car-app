@@ -1,4 +1,4 @@
-package com.company.service.adminServiceServlets;
+package com.company.controller.adminServiceServlets;
 
 import com.company.controller.DatabaseController;
 import com.company.entity.CarOrder;

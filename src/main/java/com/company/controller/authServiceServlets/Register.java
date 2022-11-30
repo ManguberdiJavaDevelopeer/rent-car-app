@@ -1,8 +1,7 @@
-package com.company.service.authServiceServlets;
+package com.company.controller.authServiceServlets;
 
 
 import com.company.controller.DatabaseController;
-import com.company.controller.InputController;
 import com.company.entity.Result;
 import com.company.entity.Users;
 
@@ -41,7 +40,7 @@ public class Register extends HttpServlet {
             String password = req.getParameter("password");
             String conPassword = req.getParameter("conPassword");
             List<String> values = List.of(firstName, lastName, phoneNumber, email, region, address, password, conPassword);
-            if (InputController.isEmptyInput(values)) {
+            if (isEmptyInput(values)) {
                 String errorMessage = "Some fields is empty";
                 req.setAttribute("errorRegister", errorMessage);
                 req.getRequestDispatcher("/authFrontend/register.jsp").forward(req, resp);
@@ -67,5 +66,13 @@ public class Register extends HttpServlet {
                 }
             }
         }
+    }
+    private static boolean isEmptyInput(List<String> values){
+        for (String value : values) {
+            if (value.isEmpty() || value.isBlank()) {
+                return true;
+            }
+        }
+        return false;
     }
 }

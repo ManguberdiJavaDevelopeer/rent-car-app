@@ -1,4 +1,4 @@
-package com.company.service.userServiceServlets;
+package com.company.controller.userServiceServlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

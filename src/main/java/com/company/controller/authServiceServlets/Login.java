@@ -1,4 +1,4 @@
-package com.company.service.authServiceServlets;
+package com.company.controller.authServiceServlets;
 
 import com.company.controller.DatabaseController;
 import com.company.entity.Users;

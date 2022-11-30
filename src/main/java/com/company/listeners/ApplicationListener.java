@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class ApplicationListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-
+        System.out.println("in listener");
         Connection connection = DatabaseContainer.getConnection();
         sce.getServletContext().setAttribute("dbConnection",connection);
     }

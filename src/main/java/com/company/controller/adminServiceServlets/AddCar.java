@@ -1,6 +1,6 @@
-package com.company.service.adminServiceServlets;
+package com.company.controller.adminServiceServlets;
 
-import com.company.controller.InputController;
+
 import com.company.controller.DatabaseController;
 import com.company.entity.Car;
 import com.company.entity.Result;
@@ -39,7 +39,7 @@ public class AddCar extends HttpServlet {
         boolean infoTrue=true;
         List<String> values=  List.of(carModel,carNumber,carColor,String.valueOf(carYear),String.valueOf( countOfPlace),carRegion,pricePerDay);
 
-        if (InputController.isEmptyInput(values)){
+        if (isEmptyInput(values)){
             String errorMessage = "Some fields is empty";
             req.setAttribute("errorAddCar", errorMessage);
             req.getRequestDispatcher("/adminsFrontend/adminAddCar.jsp").forward(req, resp);
@@ -75,6 +75,14 @@ public class AddCar extends HttpServlet {
             }
         }
 
+    }
+    private static boolean isEmptyInput(List<String> values){
+        for (String value : values) {
+            if (value.isEmpty() || value.isBlank()) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

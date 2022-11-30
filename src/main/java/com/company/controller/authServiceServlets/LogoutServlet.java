@@ -1,4 +1,4 @@
-package com.company.service.authServiceServlets;
+package com.company.controller.authServiceServlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
